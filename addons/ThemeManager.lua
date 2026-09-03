@@ -300,11 +300,11 @@ local ThemeManager = {} do
 
 	--// GUI \\--
 	function ThemeManager:CreateThemeManager(groupbox)
-		groupbox:AddLabel('background color'):AddColorPicker('background color', { Default = self.Library.BackgroundColor });
-		groupbox:AddLabel('main color')	:AddColorPicker('main color', { Default = self.Library.MainColor });
-		groupbox:AddLabel('accent color'):AddColorPicker('accent color', { Default = self.Library.AccentColor });
-		groupbox:AddLabel('outline color'):AddColorPicker('outline color', { Default = self.Library.OutlineColor });
-		groupbox:AddLabel('font color')	:AddColorPicker('font color', { Default = self.Library.FontColor });
+		groupbox:AddLabel('background color'):AddColorPicker('BackgroundColor', { Default = self.Library.BackgroundColor });
+		groupbox:AddLabel('main color')	:AddColorPicker('MainColor', { Default = self.Library.MainColor });
+		groupbox:AddLabel('accent color'):AddColorPicker('AccentColor', { Default = self.Library.AccentColor });
+		groupbox:AddLabel('outline color'):AddColorPicker('OutlineColor', { Default = self.Library.OutlineColor });
+		groupbox:AddLabel('font color')	:AddColorPicker('FontColor', { Default = self.Library.FontColor });
 		groupbox:AddInput('video link', { Text = '.webm video background (link)', Default = self.Library.VideoLink });
 		
 		local ThemesArray = {}
